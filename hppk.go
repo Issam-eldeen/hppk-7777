@@ -547,7 +547,7 @@ func verifySignature(sig *Signature, digest []byte, pub *PublicKey, prime *big.I
 }
 
 // createCoPrimePair generates a pair of coprime numbers (R, S) greater than the given prime p.
-// The possibility or 2 random numbers being coprime is 6/pi^2
+// The possibility for 2 randomly choosen numbers to be coprime is 6/pi^2
 func createCoPrimePair(polyTerms int, p *big.Int) (R *big.Int, S *big.Int, err error) {
 	one := big.NewInt(1)
 
